@@ -3,8 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  // Remove this CSS block completely
-  // css: {
-  //   postcss: "./postcss.config.js",
-  // },
+  base: "./", // Add this line - uses relative paths
 });
